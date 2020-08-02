@@ -1,17 +1,29 @@
 <?php
 
 	require "animal.php";
+	require "frog.php";
+	require "ape.php";
 
-		$sheep = new Animal("shaun", 2, "false");
+		$sheep = new Animal("shaun");
 		
-		//$sheep->set_name('shaun');
-		echo var_dump($sheep->get_name()); // "shaun"
+		echo $sheep->name; // "shaun"
+		echo "<br>";
 
-		//$sheep1->set_legs('2');
-		echo "<br>"var_dump($sheep->get_legs()); // 2
+		echo $sheep->legs; // 2
+		echo "<br>";
 
-		//$sheep2->set_cold_blooded('false');
-		echo "<br>"var_dump($sheep->get_cold_blooded()); // false
+		echo "<br>";
+		var_dump($sheep->cold_blooded); // false
+
+		echo "<br>";
+		$kodok = new Frog("buduk");
+		$kodok->jump();
+		echo "<br>";
+		echo $kodok->name;
+
+		echo "<br>";
+		$sungokong = new Ape("kera sakti");
+		$sungokong->yell();
 
 
 // NB: Boleh juga menggunakan method get (get_name(), get_legs(), get_cold_blooded())
