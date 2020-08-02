@@ -1,20 +1,14 @@
 <?php
-	
-	require "animal.php";
-
-		$kodok = new Frog("buduk",4,"true");
 		
+	class frog extends animal{
+		public $legs = 4;	
 
-		
-		echo var_dump($kodok->get_name());
 
-		
-		echo "<br>"var_dump($kodok->get_legs());
+		public function jump(){
+		 echo "hop hop";
+		}
 
-		
-		echo "<br>"var_dump($kodok->get_cold_blooded());
-
+	}
 
 		
-
 ?>
