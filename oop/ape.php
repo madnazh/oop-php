@@ -1,17 +1,14 @@
 <?php
 
-	require "animal.php";
+	class ape extends animal{	
 
-		$sungokong = new Ape("kera sakti",2,"false");
+		public function yell() {
+		 echo "Auooo";
+		}
 		
-
-		echo var_dump($sungokong->get_name());
-
-		
-		echo "<br>"var_dump($sungokong->get_legs());
+	}
 
 		
-		echo "<br>"var_dump($sungokong->get_cold_blooded());
 		
 	
 ?>
